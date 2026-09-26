@@ -1,12 +1,1 @@
-[build-system]
-requires = ["setuptools>=61"]
-build-backend = "setuptools.build_meta"
 
-[project]
-name = "discord-vr"
-version = "2.0.0"
-description = "Make discord.py bots appear as if they are using a VR client."
-requires-python = ">=3.8"
-
-[tool.setuptools.packages.find]
-include = ["discord_vr*"]
