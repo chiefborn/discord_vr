@@ -11,4 +11,4 @@
 ---------------------------------------
 
 ```bash
-pip install -U git+https://github.com/YOUR_USERNAME/discord_vr/
+pip install -U git+https://github.com/chiefborn/discord_vr/
