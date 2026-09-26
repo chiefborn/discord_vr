@@ -1,23 +1,26 @@
 async def identify(self):
     payload = {
-        'op': self.IDENTIFY,
-        'd': {
-            'token': self.token,
-            'properties': {
-                '$os': '',
-                '$browser': 'Discord VR',
-                '$device': 'Discord VR',
-                '$referrer': '',
-                '$referring_domain': ''
+        "op": self.IDENTIFY,
+        "d": {
+            "token": self.token,
+            "properties": {
+                "$os": "",
+                "$browser": "Discord VR",
+                "$device": "Discord VR",
+                "$referrer": "",
+                "$referring_domain": ""
             },
-            'compress': True,
-            'large_threshold': 250,
-            'v': 3
+            "compress": True,
+            "large_threshold": 250,
+            "v": 3
         }
     }
 
     if self.shard_id is not None and self.shard_count is not None:
-        payload["d"]["shard"] = [self.shard_id, self.shard_count]
+        payload["d"]["shard"] = [
+            self.shard_id,
+            self.shard_count
+        ]
 
     state = self._connection
 
@@ -26,7 +29,7 @@ async def identify(self):
             "status": state._status,
             "game": state._activity,
             "since": 0,
-            "afk": False,
+            "afk": False
         }
 
     if state._intents is not None:
