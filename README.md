@@ -1,25 +1,14 @@
 <br/>
 <div align="center">
-  
-  <h2 align="center">Discord-iOS</h3>
+
+  <h2 align="center">Discord-VR</h2>
 
   <p align="center">
-    Make your bot have the discord online from a mobile device status.
+    Make your bot appear as if it is connected from a VR device.
   </p>
 </div>
 
 ---------------------------------------
 
-```
-pip install -U git+https://github.com/notiku/discord_ios/
-```
-
-```py
-import discord_ios
-
-import discord
-from discord.ext import commands
-
-client = commands.Bot(...)
-```
-- All you need todo is import `discord_ios` in your main file.
+```bash
+pip install -U git+https://github.com/YOUR_USERNAME/discord_vr/
